@@ -1,11 +1,12 @@
 version: 0.0
 os: linux
 files:
-  - source: /iDetailsFile.php
-    destination: /var/www/html/index.php
+  - source: /DetailsFile.php
+    destination: /var/www/html/DetailsFile
+
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies
+    - location: scripts/Dependencies
       timeout: 200
       runas: root
     - location: scripts/start_server
