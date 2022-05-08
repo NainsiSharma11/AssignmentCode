@@ -1,0 +1,4 @@
+install_dependencies
+
+#!/bin/bash
+yum install -y httpd
